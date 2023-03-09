@@ -1,0 +1,29 @@
+html
+    head
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js") 
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js")
+        script(src="http://raw.githack.com/composite/jQuery.MsgBox/master/jquery.msgbox.min.js")
+        script(src="https://unpkg.com/sweetalert/dist/sweetalert.min.js")
+        link(rel='stylesheet' type="text/css" href='/css/style.css')
+        title= title 
+    body 
+        h1= title
+        div(id="contenedor")
+            div(class="grid-container-menu")
+                button.menu(onclick="$(location).attr('href','/facil');") Fácil 
+                button.menu(onclick="$(location).attr('href','/medio');") Medio 
+                button.menu(onclick="$(location).attr('href','/dificil');") Difícil
+        footer 
+            div(class="grid-container")
+                div(class="item1") Hecho por: 
+                div(class="item2") Andres Felipe Diaz Bolaños   
+                div(class="item3") Daniel Santiago Guerrero Riaño
+                div(class="item4") Nicolas Medina Garcia
+        script.
+            $(document).ready(function () {    
+                var height = $(window).height();
+                $('#contenedor').height(height);
+                $("h1").click(function () {
+                    $(location).attr('href','/');
+                })
+            });

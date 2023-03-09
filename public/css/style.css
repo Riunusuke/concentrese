@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "retro";
+    src: url("fonts/retro.ttf") format("truetype");
+}
+
+.msgbox-msg {
+    color: crimson;
+  }
+
+body {
+    background-image: url(/img/Fondo.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    margin: 0;
+}
+
+html {
+    margin: 0;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(10px);
+    --border-size: 3px;
+}
+
+footer {
+    margin: 0;
+    text-align: center;
+    font-family: "retro";
+    color:rgb(246, 201, 42);
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(10px);
+    --border-size: 3px;
+}
+
+.grid-container-menu {
+    display: grid;
+    grid-template-columns: 25%;
+    justify-content: space-around;
+    gap: 10px;    
+    padding: 50px;    
+  }
+
+button.menu{
+    font-size: 75px;
+    margin: 5%;
+    border: 5px solid rgb(246, 201, 42);
+    background-color: rgb(198, 36, 249);
+    color: rgb(246, 201, 42);
+    font-family: "retro";
+    border-radius:5px;
+    animation: buttonAnimation 1s linear infinite alternate;
+}
+
+.swal-text{
+    -webkit-text-fill-color: rgb(246, 201, 42);
+    font-family: "retro";
+    font-size: 45px;
+}
+
+.swal-button {
+    font-size: 30px;
+    margin: 5%;
+    border: 5px solid rgb(246, 201, 42);
+    background-color: rgb(198, 36, 249);
+    color: rgb(246, 201, 42);
+    font-family: "retro";
+    border-radius:5px;
+}
+
+.swal-overlay{
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(10px);
+    --border-size: 3px;
+}
+.swal-modal {
+    background-color: rgb(198, 36, 249);
+}
+
+
+.swal-footer {
+    text-align: center;
+}
+
+.swal-title{
+    animation: fontColors1 1s linear infinite alternate;
+    -webkit-text-stroke: 1px rgb(246, 201, 42);
+    -webkit-text-fill-color: rgb(198, 36, 249);
+    font-family: "retro";
+    font-size: 90px;
+}
+
+@keyframes fontColors1 {
+    from {
+        -webkit-text-stroke: 1px rgb(246, 201, 42);
+    }
+
+    to {
+        -webkit-text-stroke: 0.5px rgb(246, 201, 42);
+    }
+}
+
+@keyframes buttonAnimation {
+    from {
+        border: 5px solid rgb(255, 209, 45);
+        color: rgb(255, 209, 45);
+    }
+
+    to {
+        border: 5px solid rgba(255, 209, 45, 0.671);
+        color: rgba(255, 209, 45, 0.671);
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;    
+    padding: 10px;
+  }
+  
+  .grid-container > div {  
+    font-family: "retro";
+    text-align: center;
+    padding: 10px 0;
+    font-size: 50px;
+  }
+  
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end:4;
+  }
+
+
+
+img {
+    border: 5px solid rgb(198, 36, 249);
+    transition: border 0.3s linear;
+}
+
+table {
+    animation: borderColors 3s linear infinite alternate;
+}
+
+@keyframes borderColors {
+    from {
+        border: 8px dotted rgb(255, 209, 45);
+    }
+
+    to {
+        border: 8px dotted rgba(255, 209, 45, 0.315);
+    }
+}
+
+img:hover {
+    border: 5px solid rgb(255, 209, 45);
+}
+
+h1 {
+    text-align: center;
+    font-size: 125px;
+    animation: fontColors 1s linear infinite alternate;
+    -webkit-text-stroke: 2px rgb(246, 201, 42);
+    -webkit-text-fill-color: rgb(198, 36, 249);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: "retro";
+}
+
+@keyframes fontColors {
+    from {
+        -webkit-text-stroke: 2px rgb(246, 201, 42);
+    }
+
+    to {
+        -webkit-text-stroke: 1px rgb(246, 201, 42);
+    }
+}

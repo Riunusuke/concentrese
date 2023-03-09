@@ -1,0 +1,29 @@
+html
+    head
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js") 
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js")
+        script(src="http://raw.githack.com/composite/jQuery.MsgBox/master/jquery.msgbox.min.js")
+        script(src="https://unpkg.com/sweetalert/dist/sweetalert.min.js")
+        link(rel='stylesheet' type="text/css" href='/css/style.css')
+        title= title 
+    body 
+        h1= title
+        div(id="contenedor")
+            table
+                - for (var x = 0; x < 2; x++)
+                    tr
+                        - for (var y = 0; y < 4; y++)
+                            td
+                                img(id=""+x+'_'+y+"" width="180" height="180" src="img/defecto.png")
+                                   
+        footer 
+            div(class="grid-container")
+                div(class="item1") Hecho por: 
+                div(class="item2") Andres Felipe Diaz Bolaños   
+                div(class="item3") Daniel Santiago Guerrero Riaño
+                div(class="item4") Nicolas Medina Garcia
+        script.
+            var cartas = 8
+        script(src="/js/main.js")
+
+                
